@@ -19,7 +19,7 @@ namespace PhoneStore.Controllers
             _context = context;
         }
 
-        // GET: Orders
+        // GET: Orders list
         public async Task<IActionResult> Index()
         {
             return View(await _context.Order.ToListAsync());
